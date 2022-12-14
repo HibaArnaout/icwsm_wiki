@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<title>Wiki Demographics</title>
+		<link rel="icon" href="{% static 'favicon.ico' %}">
+		<link rel="stylesheet" type="text/css" href="{% static '/css/style.css'%}">
+		<div class="header">Findings in Wiki-based Knowledge
+		<br>
+		<a href="javascript:;" onclick="showdemographics()">Demographics & Outstanding Members</a>
+		<a href="javascript:;" onclick="showtrivia()">Fun Trivia</a>
+		<a target="_blank" href="https://zenodo.org/">Datasets</a>
+		<a target="_blank" href="https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/research/knowledge-base-recall/interesting-negations-in-kbs">Parent Project</a>
+		</div>
+	</head>
+	
+	<body>
+	
+	<div id="trivia" style="display:none">
+	<p><span style="color:yellow;">soon! very soon!</span></p>
+	<script type="text/javascript" src="{% static '/js/fetchtrivia.js'%}"></script>
+	</div>
+	
+	<div id="demographics" style="display:none">
+	<form>
+	Select topic:<select id="topic">
+	<option value""></option>
+	<option value"Culture">Culture</option>
+	<option value"Biography">&nbsp;Biography</option>
+	<option value"Women">&nbsp;&nbsp;Women</option>
+	<option value"Food_and_drink">&nbsp;Food_and_drink</option>
+	<option value"Internet_culture">&nbsp;Internet_culture</option>
+	<option value"Linguistics">&nbsp;Linguistics</option>
+	<option value"Literature">&nbsp;Literature</option>
+	<option value"Media">&nbsp;Media</option>
+	<option value"Books">&nbsp;&nbsp;Books</option>
+	<option value"Entertainment">&nbsp;&nbsp;Entertainment</option>
+	<option value"Films">&nbsp;&nbsp;Films</option>
+	<option value"Music">&nbsp;&nbsp;Music</option>
+	<option value"Radio">&nbsp;&nbsp;Radio</option>
+	<option value"Software">&nbsp;&nbsp;Software</option>
+	<option value"Television">&nbsp;&nbsp;Television</option>
+	<option value"Performing_arts">&nbsp;Performing_arts</option>
+	<option value"Philosophy_and_religion">&nbsp;Philosophy_and_religion</option>
+	<option value"Sports">&nbsp;Sports</option>
+	<option value"Visual_arts">&nbsp;Visual_arts</option>
+	<option value"Architecture">&nbsp;&nbsp;Architecture</option>
+	<option value"Comics_and_Anime">&nbsp;&nbsp;Comics_and_Anime</option>
+	<option value"Fashion">&nbsp;&nbsp;Fashion</option>
+	<option value"Geography">Geography</option>
+	<option value"Geographical">&nbsp;Geographical</option>
+	<option value"Regions">&nbsp;Regions</option>
+	<option value"Africa">&nbsp;&nbsp;Africa</option>
+	<option value"Central_Africa">&nbsp;&nbsp;&nbsp;Central_Africa</option>
+	<option value"Eastern_Africa">&nbsp;&nbsp;&nbsp;Eastern_Africa</option>
+	<option value"Northern_Africa">&nbsp;&nbsp;&nbsp;Northern_Africa</option>
+	<option value"Southern_Africa">&nbsp;&nbsp;&nbsp;Southern_Africa</option>
+	<option value"Western_Africa">&nbsp;&nbsp;&nbsp;Western_Africa</option>
+	<option value"Americas">&nbsp;&nbsp;Americas</option>
+	<option value"Central_America">&nbsp;&nbsp;&nbsp;Central_America</option>
+	<option value"North_America">&nbsp;&nbsp;&nbsp;North_America</option>
+	<option value"South_America">&nbsp;&nbsp;&nbsp;South_America</option>
+	<option value"Asia">&nbsp;&nbsp;Asia</option>
+	<option value"Central_Asia">&nbsp;&nbsp;&nbsp;Central_Asia</option>
+	<option value"East_Asia">&nbsp;&nbsp;&nbsp;East_Asia</option>
+	<option value"North_Asia">&nbsp;&nbsp;&nbsp;North_Asia</option>
+	<option value"South_Asia">&nbsp;&nbsp;&nbsp;South_Asia</option>
+	<option value"Southeast_Asia">&nbsp;&nbsp;&nbsp;Southeast_Asia</option>
+	<option value"West_Asia">&nbsp;&nbsp;&nbsp;West_Asia</option>
+	<option value"Europe">&nbsp;&nbsp;Europe</option>
+	<option value"Eastern_Europe">&nbsp;&nbsp;&nbsp;Eastern_Europe</option>
+	<option value"Northern_Europe">&nbsp;&nbsp;&nbsp;Northern_Europe</option>
+	<option value"Southern_Europe">&nbsp;&nbsp;&nbsp;Southern_Europe</option>
+	<option value"Western_Europe">&nbsp;&nbsp;&nbsp;Western_Europe</option>
+	<option value"Oceania">&nbsp;&nbsp;Oceania</option>
+	<option value"History_and_Society">History_and_Society</option>
+	<option value"Business_and_economics">&nbsp;Business_and_economics</option>
+	<option value"Education">&nbsp;Education</option>
+	<option value"History">&nbsp;History</option>
+	<option value"Military_and_warfare">&nbsp;Military_and_warfare</option>
+	<option value"Politics_and_government">&nbsp;Politics_and_government</option>
+	<option value"Society">&nbsp;Society</option>
+	<option value"Transportation">&nbsp;Transportation</option>
+	<option value"STEM">STEM</option>
+	<option value"Biology">&nbsp;Biology</option>
+	<option value"Chemistry">&nbsp;Chemistry</option>
+	<option value"Computing">&nbsp;Computing</option>
+	<option value"Earth_and_environment">&nbsp;Earth_and_environment</option>
+	<option value"Engineering">&nbsp;Engineering</option>
+	<option value"Libraries_&_Information">&nbsp;Libraries_&_Information</option>
+	<option value"Mathematics">&nbsp;Mathematics</option>
+	<option value"Medicine_&_Health">&nbsp;Medicine_&_Health</option>
+	<option value"Physics">&nbsp;Physics</option>
+	<option value"Space">&nbsp;Space</option>
+	<option value"Technology">&nbsp;Technology</option>
+	</select>
+	</form>
+		<p id="totalRows"></p>
+	<table>
+		<tbody id="demographics-output">
+		</tbody>
+	</table>
+	<script type="text/javascript" src="{% static '/js/fetchjson.js'%}"></script>
+	</div>
+	<script type="text/javascript" src="{% static '/js/script.js'%}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</body>
+</html>
