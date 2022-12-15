@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ppzm0#$r4n4ts-i2$!w643&r3)7%a1q*qvwo0trm@*_$@0mf1v
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['wiki-demographics.onrender.com']
+ALLOWED_HOSTS = ['wikiknowledge.onrender.com']
 
 
 # Application definition
