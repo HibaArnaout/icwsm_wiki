@@ -19,24 +19,22 @@ fetch("/static/js/group_centric.json")
 	return response.json();
 })
 .then(function(groups){
-	groups = groups.slice().sort((a, b) => b.score - a.score);
+	//groups = groups.slice().sort((a, b) => b.score - a.score);
 	var ind = 0;
 	var totalRows = 0;
 	let placeholder = document.querySelector("#demographics-output");
-	let out = "<thead><tr><th>Group title</th><th># of members</th><th>Demographic factors</th><th>Outstanding member</th><th>Reason for outstandingness</th><th>Score</th></tr></thead>";
+	let out = "<thead><tr><th>Group title</th><th># of members</th><th>Demographics</th><th>Outstanding members</th></tr></thead>";
 	for(let group of groups){
 		const filteredArray = topicMap[0][topic_val].filter(value => group.topics.includes(value));
 		if (filteredArray.length > 0)
 		{
-			if(ind < 50){
+			if(ind < 100){
 			out += `
 				<tr>
 					<td>${group.title_label}</td>
 					<td>${group.number_of_recorded_members}</td>
 					<td>${group.demographic_factors}</td>
-					<td>${group.outstanding_member}</td>
-					<td>${group.reason}</td>
-					<td>${group.score}</td>
+					<td>${group.outstanding_members}</td>
 				</tr>
 			`;
 	}

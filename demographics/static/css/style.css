@@ -2,7 +2,7 @@
 {
 	background-color: slategray;
 	color: white;
-	font-size: 24px;
+	font-size: 18px;
 	text-align:left;
 	margin-left:20px;
 	margin-right:20px;
@@ -15,3 +15,15 @@
 	margin-right:30px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
