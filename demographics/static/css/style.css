@@ -27,3 +27,8 @@
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: white;
 }
+
+td
+{
+	font-size: 18px;
+}
