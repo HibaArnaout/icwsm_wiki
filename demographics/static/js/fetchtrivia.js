@@ -13,7 +13,7 @@ fetch("/static/js/subject_centric.json")
 .then(function(groups){
 	console.log("json read");
 	let placeholder = document.querySelector("#trivia-output");
-	let out = "<thead><tr><th>Subject</th><th>Trivia</th><th>Score</th></tr></thead>";
+	let out = "<thead><tr><th>Subject</th><th>Statement</th><th>Relative Incidence</th></tr></thead>";
 	for(let group of groups){
 		if (group.subject_id == ent)
 		{

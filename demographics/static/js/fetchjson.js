@@ -23,7 +23,7 @@ fetch("/static/js/group_centric.json")
 	var ind = 0;
 	var totalRows = 0;
 	let placeholder = document.querySelector("#demographics-output");
-	let out = "<thead><tr><th>Group title</th><th># of members</th><th>Demographics</th><th>Outstanding members</th></tr></thead>";
+	let out = "<thead><tr><th>Community</th><th># of members</th><th>Demographics</th><th>Outliers</th></tr></thead>";
 	for(let group of groups){
 		const filteredArray = topicMap[0][topic_val].filter(value => group.topics.includes(value));
 		if (filteredArray.length > 0)
