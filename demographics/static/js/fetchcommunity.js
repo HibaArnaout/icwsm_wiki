@@ -1,4 +1,4 @@
-let ent
+let comm
 	
 function getcommunity(){
 	comm = document.querySelector('#community').value;
