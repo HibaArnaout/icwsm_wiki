@@ -20,7 +20,7 @@ fetch("/static/js/subject_centric.json")
 			out += `
 				<tr>
 					<td>${group.subject_label}</td>
-					<td>${group.trivia}</td>
+					<td>${group.statement}</td>
 					<td>${group.score}</td>
 				</tr>
 			`;

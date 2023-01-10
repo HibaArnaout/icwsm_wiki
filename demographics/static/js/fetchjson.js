@@ -34,7 +34,7 @@ fetch("/static/js/group_centric.json")
 					<td>${group.title_label}</td>
 					<td>${group.number_of_recorded_members}</td>
 					<td>${group.demographic_factors}</td>
-					<td>${group.outstanding_members}</td>
+					<td>${group.outliers}</td>
 				</tr>
 			`;
 	}
