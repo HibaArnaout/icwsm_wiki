@@ -15,8 +15,6 @@ fetch("/static/js/group_centric.json")
 	let placeholder = document.querySelector("#community-output");
 	let out = "<thead><tr><th>Community</th><th># of members</th><th>Demographics</th><th>Outliers</th></tr></thead>";
 	for(let group of groups){
-		console.log(group.title_id)
-		console.log(comm)
 		if (group.title_id == comm)
 		{
 			out += `
