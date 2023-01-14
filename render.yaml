@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mpiproject
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn mpiproject.wsgi:application"
+    envVars:
+      - key: WEB_CONCURRENCY
+        value: 4
