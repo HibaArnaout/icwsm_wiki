@@ -7,7 +7,7 @@ function showcommunities() {
 	    btnText.style.display = "block";
 	    other.style.display = "none";
 	    otherr.style.display = "none";
-	    otherr.style.display = "none";
+	    otherrr.style.display = "none";
 	  } else {
 	    btnText.style.display = "none";
 	  }
@@ -22,7 +22,7 @@ function showtrivia() {
 	    btnText.style.display = "block";
 	    other.style.display = "none";
 	    otherr.style.display = "none";
-	    otherr.style.display = "none";
+	    otherrr.style.display = "none";
 	  } else {
 	    btnText.style.display = "none";
 	  }
@@ -37,7 +37,7 @@ function showdemographics() {
 	    btnText.style.display = "block";
 	    other.style.display = "none";
 	    otherr.style.display = "none";
-	    otherr.style.display = "none";
+	    otherrr.style.display = "none";
 	  } else {
 	    btnText.style.display = "none";
 	  }
