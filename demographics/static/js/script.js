@@ -44,10 +44,10 @@ function showdemographics() {
 }
 
 function showdocumentation() {
-	var otherrr = document.getElementById("demographics");
+	var btnText = document.getElementById("documentation");
 	var other = document.getElementById("trivia");
 	var otherr = document.getElementById("bycommunity");
-	var btnText = document.getElementById("documentation");
+	var otherrr = document.getElementById("demographics");
 	  if (btnText.style.display == "none") {
 	    btnText.style.display = "block";
 	    other.style.display = "none";
@@ -57,4 +57,3 @@ function showdocumentation() {
 	    btnText.style.display = "none";
 	  }
 }
-
